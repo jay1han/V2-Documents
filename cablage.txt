@@ -1,0 +1,48 @@
+// PIN CONFIGURATION (old with bare pins - do not use)
+// Board Type 0 (S2). GPIO 35 is GND
+
+//            X EN   1(yw):gnd:        x 40   39(i):sda:
+//     :sda: (i)3    2 o  :tx :UART    x 38   37(j):scl:Sens
+// OLED:scl: (j)5    4 o  :rx :        x 36   35(w):gnd:#0
+// Disp:vcc:(ac)7    6 x               x 34   33(c):vcc:
+//     :gnd:(zv)9    8 o  :sda:        x 21   18 x
+//            x 11  10 o  :scl:Sens    x 17   16 x
+//            x 12  13(v) :gnd:#1      x GND GND(yz)
+//          (ab)3V3 14(b) :vcc:        X 15 VBUS X
+
+// PIN CONFIGURATION (new with connectors, no UART)
+// Board Type 1 (S2x). GPIO 35 is HIGH
+
+//            o EN   1 x                    x 40   39 x
+//     :sda: (i)3    2 x              :vcc:{d}38   37 x
+// OLED:scl: (j)5    4 x          Sens:gnd:{w}36   35(bd)
+// Disp:vcc:(ac)7    6 x            #0:scl:{j}34<  33 x
+//     :gnd:(vz)9    8 o :sda:        :sda:{i}21<  18 x
+//            x 11  10 o :scl:Sens          x 17   16 x
+//            x 12  13{v}:gnd:#1          (wz)GN1 GN2 x
+//          (ab)3V3 14{c}:vcc:              X 15 VBUS X
+
+// PIN CONFIGURATION (S2 mini without UART - do not use)
+// Board Type 2 (S2u). GPIO 35 is HIGH and GPIO 1 is HIGH
+
+//             X EN   1(bc)                  x 40   39 x
+//      :sda: (i)3    2 x                    x 38   37 x
+//      :scl: (j)5    4 x                    x 36   35(ce)
+//  Disp:vcc:(ad)7    6 x                    x 34   33 x
+//      :gnd: (y)9   >8 o :sda:Sens   :sda: {i}21<  18 x
+//             x 11 >10 o :scl:#1     :scl: {j}17<  16 x
+//             x 12  13{z}:gnd:   Sens:gnd:  o GN1 GN2(yz)
+//           (ab)3V3 14{d}:vcc:     #0:vcc: {e}15 VBUS X
+
+// PIN CONFIGURATION (for S3 mini with I2C)
+// Board Type 3 (S3i). GPIO 6 is HIGH
+
+//            X EN   1 x                   x 33   43 x
+//            x 2    3 x                   x 37   44 x
+//            x 3    5 x                   x 38   36 x
+//     :sda: (i)12   6 x                   x 34   35 x
+//  I2C:scl: (j)13   7 o :sda:   Port:sda:{i}21<  18 x
+// Disp:vcc:(ac)11   8 o :scl:     #0:scl:{j}17<  16 x
+//     :gnd: (z)10   9{y}:gnd:Port   :gnd: o GN1 GN2(zy)
+//          (ab)3V3 14{c}:vcc:#1     :vcc:{b}15 VBUS X
+
