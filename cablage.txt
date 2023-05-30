@@ -35,7 +35,7 @@
 //           (ab)3V3 14{d}:vcc:     #0:vcc: {e}15 VBUS X
 
 // PIN CONFIGURATION (for S3 mini with I2C)
-// Board Type 3 (S3i). GPIO 6 is HIGH
+// Board Type 3 (S3i)
 
 //            X EN   1 x                   x 33   43 x
 //            x 2    3 x                   x 37   44 x
