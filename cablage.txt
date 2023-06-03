@@ -43,6 +43,6 @@
 //     :sda: (i)12   6 x                   x 34   35 x
 //  I2C:scl: (j)13   7 o :sda:   Port:sda:{i}21<  18 x
 // Disp:vcc:(ac)11   8 o :scl:     #0:scl:{j}17<  16 x
-//     :gnd: (z)10   9{y}:gnd:Port   :gnd: o GN1 GN2(zy)
+//     :gnd:(yz)10   9{y}:gnd:Port   :gnd:{z}GN1 GN2 x
 //          (ab)3V3 14{c}:vcc:#1     :vcc:{b}15 VBUS X
 
